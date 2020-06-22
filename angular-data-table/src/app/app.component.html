@@ -1,0 +1,13 @@
+<div class="content">
+  <label>
+    <input (keyup)="filterStudents()" [formControl]="searchBar"
+           class="search form-control" placeholder="Search..." type="text">
+  </label>
+  <div class="table-content">
+    <app-data-table (sortCriteria)="sortTable($event)"
+                    [initialSortCriteria]="initialTableSortCriteria"
+                    [tableHeaders]="tableHeaders"
+                    [tableRows]="filteredData"></app-data-table>
+
+  </div>
+</div>

@@ -1,0 +1,42 @@
+div {
+  overflow-x: auto;
+
+  table {
+    border-collapse: collapse;
+    box-shadow: 0 0 50px -35px rgba(0, 0, 0, 0.66);
+
+    th {
+      font-size: 1.1em;
+      padding: 1em;
+
+      .sortable:after {
+        font-size: 1.7em;
+        content: '\2193 \2191';
+      }
+
+      .sortable:hover {
+        cursor: pointer;
+      }
+
+      .not-sortable {
+        pointer-events: none;
+      }
+    }
+
+    tbody {
+      tr {
+        border-bottom: 2px solid lightgrey;
+      }
+
+      tr:hover {
+        cursor: pointer;
+        background-color: lightgrey;
+      }
+
+      td {
+        padding: 15px;
+        font-size: 1.2em;
+      }
+    }
+  }
+}

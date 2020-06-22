@@ -1,0 +1,20 @@
+<div>
+  <table>
+    <thead>
+    <tr>
+      <th *ngFor="let header of tableHeaders">
+        <span (click)="onHeaderClick(header)"
+              [ngClass]="(header.sortable) ? 'sortable' : 'not-sortable'">{{header.title}}</span>
+      </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let tableRow of tableRows">
+      <td *ngFor="let dataKey of tableHeaders">
+        {{tableRow[dataKey.propAssociated]}}
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+</div>
