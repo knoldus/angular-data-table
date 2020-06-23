@@ -6,7 +6,7 @@ This is simple data-table, with search filter, sorting, and responsive feature. 
 
 Pre-requisite : angualr v9, node.js
 
-install dependencies: npm intall
+install dependencies: npm install
 
 run: ng serve
 
